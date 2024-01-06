@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Library</title>
+    </head>
+    <body>
+
+        <h1>A simple library</h1>
+        <div class="container">
+            <form action="" id="book-form">
+                <label for="name">Book: <input type="text" id="name"/></label>
+                <label for="author">Author: <input type="text" id="author"/></label>
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+                    <option value="Read">Read</option>
+                    <option value="Unread">Unread</option>
+                </select>
+                <input type="submit" value="Submit" class="submit-btn"/>
+            </form>
+        </div>
+        <div class="t-container">
+            <table class="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>
+                <tbody id="book-table-body"></tbody>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
